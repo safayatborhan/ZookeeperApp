@@ -10,6 +10,7 @@ using ZookeeperApp.Models;
 
 namespace ZookeeperApp.Controllers
 {
+    [Authorize]
     public class FoodsController : Controller
     {
         private ZooDBContext db = new ZooDBContext();

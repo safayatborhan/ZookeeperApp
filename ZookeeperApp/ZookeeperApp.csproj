@@ -191,10 +191,14 @@
     <Content Include="Views\AnimalFoods\Details.cshtml" />
     <Content Include="Views\AnimalFoods\Edit.cshtml" />
     <Content Include="Views\AnimalFoods\Index.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AnimalFoodsController.cs" />
     <Compile Include="Controllers\AnimalsController.cs" />
     <Compile Include="Controllers\FoodsController.cs" />
@@ -202,6 +206,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201612141527508_InitialIdentityModels.cs" />
+    <Compile Include="Migrations\201612141527508_InitialIdentityModels.Designer.cs">
+      <DependentUpon>201612141527508_InitialIdentityModels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\AnimalFood.cs" />
     <Compile Include="Models\Food.cs" />
@@ -234,6 +243,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201612141527508_InitialIdentityModels.resx">
+      <DependentUpon>201612141527508_InitialIdentityModels.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
