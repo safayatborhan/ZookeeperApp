@@ -29,6 +29,7 @@ namespace ZookeeperApp.Models
 
         }
 
+        //This is a factory pattern to create a object of this ApplicationDbContext class without using the typical new keyword
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

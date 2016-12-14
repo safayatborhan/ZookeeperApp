@@ -193,6 +193,7 @@
     <Content Include="Views\AnimalFoods\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AnimalFoodsController.cs" />
     <Compile Include="Controllers\AnimalsController.cs" />
@@ -208,6 +209,7 @@
     <Compile Include="Models\ViewModels.cs" />
     <Compile Include="Models\ZooDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
