@@ -204,6 +204,8 @@
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\AnimalFood.cs" />
     <Compile Include="Models\Food.cs" />
+    <Compile Include="Models\Models.cs" />
+    <Compile Include="Models\ViewModels.cs" />
     <Compile Include="Models\ZooDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
